@@ -1,4 +1,4 @@
-from itertools import permutations
+ffrom itertools import permutations
 
 def generateTemplates(size):
     templates = []
@@ -246,18 +246,19 @@ def validateAnswers(size, template_tracker, init):
     else: 
         print(init) 
 
-x_size = 3
-y_size = 3
-sudoku_size = [x_size,y_size]
-test_sudoku_init = [5, 7, 3, 8, 2, 1, 4, 0, 0,
-                     8, 2, 6, 0, 9, 4, 1, 0, 0,
-                     0, 1, 4, 0, 0, 3, 0, 5, 2,
-                     3, 0, 8, 7, 5, 2, 0, 0, 4,
-                     4, 9, 0, 1, 3, 0, 0, 2, 0,
-                     2, 0, 1, 4, 8, 9, 0, 0, 6,
-                     0, 3, 2, 0, 0, 7, 0, 8, 5,
-                     7, 8, 9, 0, 6, 5, 2, 0, 0,
-                     6, 4, 5, 2, 1, 8, 7, 0, 0]
+def test():
+    x_size = 3
+    y_size = 3
+    sudoku_size = [x_size,y_size]
+    test_sudoku_init = [5, 7, 3, 8, 2, 1, 4, 0, 0,
+                         8, 2, 6, 0, 9, 4, 1, 0, 0,
+                         0, 1, 4, 0, 0, 3, 0, 5, 2,
+                         3, 0, 8, 7, 5, 2, 0, 0, 4,
+                         4, 9, 0, 1, 3, 0, 0, 2, 0,
+                         2, 0, 1, 4, 8, 9, 0, 0, 6,
+                         0, 3, 2, 0, 0, 7, 0, 8, 5,
+                         7, 8, 9, 0, 6, 5, 2, 0, 0,
+                         6, 4, 5, 2, 1, 8, 7, 0, 0]
 
-logger = True
-solve(sudoku_size, test_sudoku_init,logger)  
+    logger = True
+    solve(sudoku_size, test_sudoku_init,logger)  
